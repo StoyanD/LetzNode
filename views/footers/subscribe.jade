@@ -1,0 +1,13 @@
+section#subscribe.page.image
+  .wrapper.align-center.pattern.color-layout(data-color='rgba(38, 38, 38, 0.9)')
+    h4
+      | Subscribe on newsletter
+      br
+      | Learn first about the launch
+    form.flat(action='engine/subscribe.php', method='post')
+      input(type='email', name='email', value='', placeholder='Your email address')
+      input.btn(type='submit', value='Subscribe')
+      span.status(data-success='You was successfuly subscribed', data-error='Something goes wrong')
+    hr(style='width: 110px')
+    h4 we don't spam because we're nice
+// // END SUBSCRIBE //
