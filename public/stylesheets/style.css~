@@ -344,12 +344,12 @@ body.fontfix #countdown > div span {
 ================================================== */
 
 .pattern.dot-1 {
-	background: url('../images/patterns/dot-1.png');
+	background: url('static/images/patterns/dot-1.png');
 	background-color: rgba(0, 0, 0, .3);
 }
 
 .pattern.dot-2 {
-	background: transparent url('../images/patterns/dot-2.png');
+	background: transparent url('static/images/patterns/dot-2.png');
 	background-color: rgba(0, 0, 0, .3);
 	-webkit-background-size: 2px;
 	   -moz-background-size: 2px;
@@ -358,20 +358,20 @@ body.fontfix #countdown > div span {
 }
 
 .pattern.dot-3 {
-	background: transparent url('../images/patterns/dot-3.png');
+	background: transparent url('static/images/patterns/dot-3.png');
 	background-color: rgba(0, 0, 0, .3);
 }
 
 .pattern.line-1 {
-	background: transparent url('../images/patterns/line-1.png');
+	background: transparent url('static/images/patterns/line-1.png');
 }
 
 .pattern.line-2 {
-	background: transparent url('../images/patterns/line-2.png');
+	background: transparent url('static/images/patterns/line-2.png');
 }
 
 .pattern.gradient-1 {
-	background: transparent url('../images/patterns/gradient-1.png') 50%;
+	background: transparent url('static/images/patterns/gradient-1.png') 50%;
 	-webkit-background-size: cover;
 	   -moz-background-size: cover;
 	     -o-background-size: cover;
@@ -379,7 +379,7 @@ body.fontfix #countdown > div span {
 }
 
 .pattern.gradient-2 {
-	background: transparent url('../images/patterns/gradient-2.png') 50%;
+	background: transparent url('static/images/patterns/gradient-2.png') 50%;
 	-webkit-background-size: cover;
 	   -moz-background-size: cover;
 	     -o-background-size: cover;
@@ -416,30 +416,30 @@ ul.social.icons > li > a {
 	display: block;
 }
 
-.icon-twitter  	{ background-image: url(../images/icons/01_twitter.png)	   }
-.icon-facebook 	{ background-image: url(../images/icons/02_facebook.png)   }
-.icon-youtube  	{ background-image: url(../images/icons/03_youtube.png)    }
-.icon-dribbble 	{ background-image: url(../images/icons/04_dribbble.png)   }
-.icon-apple 	{ background-image: url(../images/icons/05_apple.png)      }
-.icon-android 	{ background-image: url(../images/icons/06_android.png)    }
-.icon-linkedin 	{ background-image: url(../images/icons/07_linkedin.png)   }
-.icon-behance 	{ background-image: url(../images/icons/08_behance.png)    }
-.icon-vimeo 	{ background-image: url(../images/icons/09_vimeo.png)      }
-.icon-instagram { background-image: url(../images/icons/10_instagram.png)  }
-.icon-wordpress { background-image: url(../images/icons/11_wordpress.png)  }
-.icon-deviantart{ background-image: url(../images/icons/12_deviantart.png) }
-.icon-pinterest { background-image: url(../images/icons/13_pinterest.png)  }
-.icon-google 	{ background-image: url(../images/icons/14_google.png)     }
-.icon-tumblr 	{ background-image: url(../images/icons/15_tumblr.png)     }
-.icon-flickr 	{ background-image: url(../images/icons/16_flickr.png)     }
-.icon-windows8	{ background-image: url(../images/icons/17_windows8.png)   }
-.icon-evernote 	{ background-image: url(../images/icons/18_evernote.png)   }
-.icon-paypal 	{ background-image: url(../images/icons/19_paypal.png)     }
-.icon-sparow 	{ background-image: url(../images/icons/20_sparow.png)     }
-.icon-blogger 	{ background-image: url(../images/icons/21_blogger.png)    }
-.icon-skype 	{ background-image: url(../images/icons/22_skype.png)      }
-.icon-envato 	{ background-image: url(../images/icons/23_envato.png)     }
-.icon-soundcould{ background-image: url(../images/icons/24_soundcould.png) }
+.icon-twitter  	{ background-image: url(static/images/icons/01_twitter.png)	   }
+.icon-facebook 	{ background-image: url(static/images/icons/02_facebook.png)   }
+.icon-youtube  	{ background-image: url(static/images/icons/03_youtube.png)    }
+.icon-dribbble 	{ background-image: url(static/images/icons/04_dribbble.png)   }
+.icon-apple 	{ background-image: url(static/images/icons/05_apple.png)      }
+.icon-android 	{ background-image: url(static/images/icons/06_android.png)    }
+.icon-linkedin 	{ background-image: url(static/images/icons/07_linkedin.png)   }
+.icon-behance 	{ background-image: url(static/images/icons/08_behance.png)    }
+.icon-vimeo 	{ background-image: url(static/images/icons/09_vimeo.png)      }
+.icon-instagram { background-image: url(static/images/icons/10_instagram.png)  }
+.icon-wordpress { background-image: url(static/images/icons/11_wordpress.png)  }
+.icon-deviantart{ background-image: url(static/images/icons/12_deviantart.png) }
+.icon-pinterest { background-image: url(static/images/icons/13_pinterest.png)  }
+.icon-google 	{ background-image: url(static/images/icons/14_google.png)     }
+.icon-tumblr 	{ background-image: url(static/images/icons/15_tumblr.png)     }
+.icon-flickr 	{ background-image: url(static/images/icons/16_flickr.png)     }
+.icon-windows8	{ background-image: url(static/images/icons/17_windows8.png)   }
+.icon-evernote 	{ background-image: url(static/images/icons/18_evernote.png)   }
+.icon-paypal 	{ background-image: url(static/images/icons/19_paypal.png)     }
+.icon-sparow 	{ background-image: url(static/images/icons/20_sparow.png)     }
+.icon-blogger 	{ background-image: url(static/images/icons/21_blogger.png)    }
+.icon-skype 	{ background-image: url(static/images/icons/22_skype.png)      }
+.icon-envato 	{ background-image: url(static/images/icons/23_envato.png)     }
+.icon-soundcould{ background-image: url(static/images/icons/24_soundcould.png) }
 
 
 /* # -- PRELOADER
@@ -1215,7 +1215,7 @@ body > footer section {
 #map {
 	width: 100%;
 	height: 100%;
-	background-image: url(../images/gmap-layout.jpg);
+	background-image: url(static/images/gmap-layout.jpg);
 	background-position: 50% 0;
 }
 

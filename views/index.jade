@@ -1,5 +1,11 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  
+  include headers/header
+  
+  include index/home
+  
+  include index/content
+  
+  include footers/footer

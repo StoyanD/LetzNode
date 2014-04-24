@@ -1,0 +1,41 @@
+section#home.page.fullscreen(data-video='false', data-url='http://vimeo.com/66926451', data-volume='0', data-loop='true')
+  //SLIDER //
+  .slider.fotorama(data-width='100%', data-height='100%', data-fit='cover', data-nav='false', data-autoplay='true', data-arrows='false', data-transition='dissolve', data-transitionduration='700', data-stellar-ratio='0.5')
+
+    img(src='http://placehold.it/250/3498db/3498db', alt='')
+    img(src='http://placehold.it/250/2ecc71/2ecc71', alt='')
+    img(src='http://placehold.it/250/9b59b6/9b59b6', alt='')
+  //END SLIDER //
+  //CONTENT //
+  //
+     PATTERNS AVAILABLE
+     # dot-1
+     # dot-2
+     # dot-3
+     # line-1
+     # line-2
+     # gradient-1
+     # gradient-2
+     # color-layout + data-color="rgba(0, 0, 0, 0.5)" (or data-color="#000000")
+     
+     USE ONLY WITH .PATTERN CLASS!
+     EXAMPLE: class="pattern gradient-2" 
+  .content.pattern.color-layout(data-color='rgba(0, 0, 0, 0.45)')
+    .wrapper.align-center
+      //LOGO //
+      #logo
+        img(src='/images/logo-white.png', alt='')
+      //END LOGO //
+      //COUNTDOWN //
+      #countdown(data-end='December 2, 2014 00:00:00', data-serversync='true', data-expiryurl='null')
+        #days(data-label='Days')
+        #hrs(data-label='Hours')
+        #min(data-label='Minutes')
+        #sec(data-label='Seconds')
+        span#cd
+        // // COUNTDOWN SHELL //
+      // // END COUNTDOWN //
+      .learn-more
+        a.btn.big.no-color(href='#') What'll happen?
+  // END CONTENT //
+//END MAIN SECTION //
