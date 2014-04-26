@@ -885,6 +885,11 @@ body > header nav a.current {
 
 #social {}
 
+#social span div{
+	display:inline-block;
+	padding: 0 15px;
+}
+
 .twitter {
 	margin: 0 auto;
 	padding: 0 15px;
