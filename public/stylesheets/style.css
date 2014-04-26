@@ -711,11 +711,12 @@ body > header nav a.current {
 #about .body .description > li h1 {
 	margin-bottom: 25px;
 	font-family: Quicksand;
-	font-size: 26px;
+	font-size: 36px;
 }
 
 #about .body .description > li p {
 	color: #7a7d81;
+	font-size: 24px;
 }
 
 
