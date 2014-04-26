@@ -258,14 +258,14 @@ window.scrollTo(0, 0);
 		}
 	}
 	
-	function goto_subscribe(e) {
+	function goto_register(e) {
 		
 		e.preventDefault();
 		
-		if ( $('#subscribe').length > 0 ) {
+		if ( $('#register').length > 0 ) {
 			
 			if ( $('#last-section nav').length > 0 ) {
-				$('#last-section nav a[data-page="subscribe"]').trigger('click');
+				$('#last-section nav a[data-page="register"]').trigger('click');
 			}
 							
 			var page_height = ( windowWidth <= 480) ? $('#subscribe').offset().top : $(document).height();
@@ -433,17 +433,17 @@ window.scrollTo(0, 0);
 					$status.transition({ opacity: 0 });
 				}, 2000);
 			}
-		})
+		});
 	}
 
 	// BINDS
 	$(document)
 		.on('click', '#home .learn-more', goto_about)
-		.on('click', '#newsletter a.btn', goto_subscribe)
+		.on('click', '#register a.btn', goto_register)
 		.on('click', 'body > header nav li > a', page_nav)
 		.on('click', '#last-section nav a', last_section_nav)
 		.on('submit', '#subscribe form', send_subscribe)
 		.on('submit', '#feedback form', send_feedback)
-		.on('click', '#last-section nav a[data-page="contacts"]', map_init)
+		.on('click', '#last-section nav a[data-page="contacts"]', map_init);
 			
 })(jQuery);
