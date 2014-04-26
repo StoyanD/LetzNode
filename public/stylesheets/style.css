@@ -706,6 +706,8 @@ body > header nav a.current {
 	display: inline-block;
 }
 
+
+
 #about .body .description > li h1 {
 	margin-bottom: 25px;
 	font-family: Quicksand;
@@ -714,6 +716,35 @@ body > header nav a.current {
 
 #about .body .description > li p {
 	color: #7a7d81;
+}
+
+
+@media handheld, only screen and (max-width: 1000px) {
+	li.proVid {
+		width: 560;
+		height: 315;
+	}
+
+
+}
+@media handheld, only screen and (max-width: 768px) {
+	li.proVid {
+		width: 360;
+		height: 202.5;
+	}
+}
+
+/* ---------------------------------------------------------------------- */
+/*	 11 Version 480px
+/* ---------------------------------------------------------------------- */
+
+@media handheld, only screen and (max-width: 480px) {
+}
+/* ---------------------------------------------------------------------- */
+/*	11 Mobile Version 240px
+/* ---------------------------------------------------------------------- */
+
+@media handheld, only screen and (max-width: 240px) {
 }
 
 
