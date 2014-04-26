@@ -392,7 +392,7 @@ window.scrollTo(0, 0);
 					$form.find('input').transition({ marginTop: 0 });
 				}, 2000);
 			}
-		})
+		});
 	}
 	
 	// Send feedback
