@@ -268,9 +268,9 @@ window.scrollTo(0, 0);
 				$('#last-section nav a[data-page="register"]').trigger('click');
 			}
 							
-			var page_height = ( windowWidth <= 480) ? $('#subscribe').offset().top : $(document).height();
+			var page_height = ( windowWidth <= 480) ? $('#register').offset().top : $(document).height();
 			$('html, body').animate({ scrollTop: page_height }, 1500, 'easeInOutCubic', function() {
-				$('#subscribe input[name="email"]').focus();
+				$('#register input[name="email"]').focus();
 			});
 		}
 	}
@@ -350,8 +350,8 @@ window.scrollTo(0, 0);
 		} 
 	}
 	
-	// Send subscribe
-	function send_subscribe(e) {
+	// Send register
+	function send_register(e) {
 	
 		e.preventDefault();
 		
@@ -442,7 +442,7 @@ window.scrollTo(0, 0);
 		.on('click', '#register a.btn', goto_register)
 		.on('click', 'body > header nav li > a', page_nav)
 		.on('click', '#last-section nav a', last_section_nav)
-		.on('submit', '#subscribe form', send_subscribe)
+		.on('submit', '#register form', send_register)
 		.on('submit', '#feedback form', send_feedback)
 		.on('click', '#last-section nav a[data-page="contacts"]', map_init);
 			
