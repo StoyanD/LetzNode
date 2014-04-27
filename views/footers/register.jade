@@ -10,6 +10,9 @@ section#register.page.image
     form.flat(action='/register', method='post')
       input(class='form-control', type='email', name='email', id='email_input', placeholder='Your email address' , required=true)
       input.btn(type='submit', value='Subscribe')
+    div#register-success.alert.alert-success Success!
+    div#register-duplicate.alert.alert-info Address already registered
+    div#register-danger.alert.alert-danger Error! Please try again later
           
           
     //form.flat(action='/register', method='post')

@@ -257,6 +257,8 @@ window.scrollTo(0, 0);
 			$('html, body').animate({ scrollTop: about_top }, 1000, 'easeInOutQuint');
 		}
 	}
+   //=================================== Register Form ===========================//
+	
 	
 	function goto_register(e) {
 		
@@ -352,47 +354,72 @@ window.scrollTo(0, 0);
 	
 	// Send register
 	function send_register(e) {
-	
-		e.preventDefault();
-		
-		var $form = $(this);
-		
-		if ( $form.hasClass('sent') ) {
-			return false;
-		}
-		
-		$form.addClass('sent').transition({ opacity: 0.5 })
-			.find('input[type="submit"]').css({ cursor: 'default' });
-		
-		$.ajax({
-			url: $form.attr('action'),
-			type: $form.attr('method'),
-			data: $form.serialize(),
-			dataType: 'json',
-			success: function(response) {
-				
-				var $status = $form.find('.status'),
-					text = $status.data('error'),
-					inputH = $form.height();
-				
-				if ( 1 == response.status ) {
-					text = $status.data('success');
-					$form.find('input[type=email]').val("");
-				} else {
-					text = response.data;
-				}
-				
-				$form.removeClass('sent').transition({ opacity: 1 })
-					.find('input[type="submit"]').css({ cursor: 'pointer' });
-					
-				$status.height( inputH ).text( text );
-				$form.find('input').transition({ marginTop: -inputH });
-				
-				setTimeout(function() {
-					$form.find('input').transition({ marginTop: 0 });
-				}, 2000);
-			}
+		e.preventDefault();  
+	      var url = $(this).attr('action');
+	      var datos = $(this).serialize();  
+	       $.post(url, datos, function(resultado) {
+	    	   console.log(resultado);
+	    	   if(resultado.saved == 'true'){
+	    		   console.log('saved is true');
+	    		   $('#register-success').html(msg).show().fadeOut(1500);
+	    		   $('#register-duplicate').hide();
+	    		   $('#register-error').hide();
+	    		   
+	    		   //Erase email, and put attr placeholder back
+	    		   $('#email_input').val('');
+	    	   }else{
+	    		   if(resultado.message == 'duplicate'){
+	    			   var msg = $('#register-duplicate').attr('message');
+	    			   $('#register-duplicate').show();
+	    		   }else{
+	    			   var msg = $('#register-error').attr('message');
+	    			   $('#register-error').show().fadeOut(2000);
+	    		   }
+		    		   
+	    	   }
+
+//	        $('#result-newsletter').html(resultado);  
 		});
+//		e.preventDefault();
+//		
+//		var $form = $(this);
+//		
+//		if ( $form.hasClass('sent') ) {
+//			return false;
+//		}
+//		
+//		$form.addClass('sent').transition({ opacity: 0.5 })
+//			.find('input[type="submit"]').css({ cursor: 'default' });
+//		
+//		$.ajax({
+//			url: $form.attr('action'),
+//			type: $form.attr('method'),
+//			data: $form.serialize(),
+//			dataType: 'json',
+//			success: function(response) {
+//				
+//				var $status = $form.find('.status'),
+//					text = $status.data('error'),
+//					inputH = $form.height();
+//				
+//				if ( 1 == response.status ) {
+//					text = $status.data('success');
+//					$form.find('input[type=email]').val("");
+//				} else {
+//					text = response.data;
+//				}
+//				
+//				$form.removeClass('sent').transition({ opacity: 1 })
+//					.find('input[type="submit"]').css({ cursor: 'pointer' });
+//					
+//				$status.height( inputH ).text( text );
+//				$form.find('input').transition({ marginTop: -inputH });
+//				
+//				setTimeout(function() {
+//					$form.find('input').transition({ marginTop: 0 });
+//				}, 2000);
+//			}
+//		});
 	}
 	
 	// Send feedback
