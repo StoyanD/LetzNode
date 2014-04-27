@@ -32,7 +32,7 @@ app.configure('development', function(){
 
 app.configure('production', function(){
 	console.log('app in production mode');
-//    app.enable('view cache');
+    app.enable('view cache');
 });
 
 app.configure(function(){
