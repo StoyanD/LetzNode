@@ -40,6 +40,7 @@ app.configure(function(){
 	app.set('port', process.env.PORT || 3000);//master branch
 	app.set('views', __dirname + '/views');
 	app.set('view engine', 'jade');
+	app.use(favicons(__dirname + '/public/images/icons'));
 	app.use(express.bodyParser());
 	app.use(express.methodOverride());
 	app.use(app.router);
