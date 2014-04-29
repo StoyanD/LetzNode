@@ -152,7 +152,7 @@ window.scrollTo(0, 0);
 			} else {
 				$footer_sections.removeAttr('style');
 			}
-		}
+		};
 		
 		$(window).resize(function() {
 			lastScreen = $(document).height() - $(window).height();
