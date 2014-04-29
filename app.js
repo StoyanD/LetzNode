@@ -50,8 +50,6 @@ app.configure(function(){
 app.get('/', routes.index);
 app.get('/users', user.list);
 
-app.get('/simple', routes.simple);
-
 app.post('/register', user.register);
 
 http.createServer(app).listen(app.get('port'), function(){
